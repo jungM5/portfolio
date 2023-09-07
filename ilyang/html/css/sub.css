@@ -1,0 +1,143 @@
+/* 서브헤더 변경 */
+.sub-header {
+  background-color: #fff;
+  height: 80px;
+  color: #181818;
+  border-bottom: 2px solid #ff2c2c;
+}
+
+
+.course-wrap {
+  width: 100%;
+  border-bottom: 1px solid #ff2c2c;
+}
+.course {
+  max-width: 1194px;
+  height: 64px;
+  padding: 20px 0; 
+  margin: 0 auto;
+  
+}
+.course ul {
+  display: flex;
+  align-items: center;
+  order: 0;
+  flex-grow: 0;
+}
+.course ul li {
+  padding: 0 10px;
+  font-size: 14px;
+}
+.course ul li:nth-child()
+
+
+.bg {
+  width: 100%;
+  height: 330px;
+  background-image: url(../p_img/pill.jpg); 
+  background-position: center;
+  display: flex;
+}
+.bg .title {
+  flex-direction: column;
+  text-align: center;
+  padding: 117px 0;
+  margin: 0 auto;
+}
+section .title h2 {
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+section:nth-child(4) {
+  padding-bottom: 320px;
+}
+
+
+.product {
+  margin: 0 auto;
+  padding: 170px 0 120px;
+}
+.subtit {
+  max-width: 1194px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.product .subtit .btn-more span {
+  padding-right: 10px;
+}
+.product .subtit .btn-more * {
+  vertical-align: middle;
+}
+.product .top {
+  max-width: 1196px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+.product .bottom {
+  max-width: 1196px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+.product .list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top {
+  margin-bottom: 70px; 
+}
+.bottom {
+  margin-top: 70px;
+}
+.product .top .productCard img {
+  max-width: 285px;
+}
+.product .bottom .productCard img {
+  max-width: 285px;
+}
+.product .pro
+figcaption {
+  font-size: 20px;
+  text-align: center;
+}
+.product .list .top, .bottom p {
+  font-size: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .product .list .top {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .product .list .bottom {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product .list .top {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .product .list .bottom {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .product {
+    padding-bottom: 70px;
+  }
+}
+
+
+
+
+
+
+
