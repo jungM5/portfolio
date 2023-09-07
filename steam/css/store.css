@@ -1,0 +1,269 @@
+:root {
+  --main-bg-color: #2A395E;
+}
+
+/* Swiper */
+.swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 930px;
+  overflow: hidden;
+}
+.swiper-wrapper .swiper-slide .slideimg {
+  width: 100%; 
+  height: 100vh;
+  object-fit: cover;
+}
+.swiper-button-next::after,.swiper-button-prev::after{
+  color: #2A3962;
+}
+.swiper .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #a4a4a4;
+}
+.swiper .swiper-pagination-bullet-active {
+  background-color: #2A3962;
+  opacity: 0.7;
+  width: 25px;
+  border-radius: 8px;
+  border: 1px solid #a4a4a4;
+}
+
+
+/* 버튼 */
+.more {
+  margin: 90px 0;
+}
+.more button {
+  color: #fff;
+  font-size: 22px;
+  font-family: 'SUIT';
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 40px;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+.more .more_btn {
+  display: flex;
+  width: 224px;
+  height: 60px;
+  padding: 10px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background: none;
+  border-radius: 40px;
+  border: 2px solid #fff;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+.more .more_btn:hover {
+  background: #fff;
+}
+.more button:hover {
+  color: var(--main-bg-color);
+  font-weight: 400;
+}
+
+
+/* 섹션 타이틀 */
+.want_game .want_tit {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 100px 0 20px;
+}
+.want_game .want_tit h2 {
+  color: #fff;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.nowsale .sale_tit {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 100px 0 20px;
+}
+.nowsale .sale_tit h3 {
+  color: #fff;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.franchise .franc_tit {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 100px 0 20px;
+}
+.franchise .franc_tit h4 {
+  color: #fff;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* 찜한목록 */
+
+.want_list {
+  display: flex;
+  margin: 0 auto;
+  gap: 20px;
+  justify-content: center;
+}
+.gamelist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.gamelist .gameimg {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+.gamelist .gameimg img {
+  width: 100%;
+  height: 350px;
+  object-fit: center;
+  border-radius: 20px 20px 0 0;
+  /* transition: all 0.3s linear; */
+}
+.gamelist .gameimg .tit {
+  box-sizing: border-box;
+  width: 100%;
+  background: #162345;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 0 40px 10px;
+}
+.gamelist .gameimg .tit p:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 22px;
+}
+.gamelist .gameimg .tit p:nth-child(2) {
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+
+
+
+
+/* 슬라이드2 */
+
+.swiper2 .slide2 {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper2 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper2 .swiper-slide {
+  width: 60%;
+}
+
+
+
+/* 세일 섹션 */
+.nowsale .sale swiper-slide img {
+  width: 345px;
+  border-radius: 20px;
+}
+.slide2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom:  120px;
+}
+/* .sale-wrap {
+  background: #162345;
+  border-radius: 20px;
+} */
+.sale-wrap .tit {
+  background: #162345;
+  border-radius: 0 0 20px 20px;
+  padding: 10px;
+  font-weight: 600;
+}
+.sale-wrap .tit p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.banner img {
+  max-width: 100%;
+}
+
+.franchise {
+  margin-bottom: 150px;
+}
+.container-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 15px;
+
+}
+.container-wrap .cont img {
+  width: 100%;
+}
+.container-wrap a{
+  display: block;
+  min-height: 100%;
+  overflow: hidden; position: relative;
+}
+.container-wrap a .franc_logo {
+  max-width: 100%; 
+  min-height: 100%;
+
+  object-fit: contain;
+  background-color: rgba(0,0,0,0.7);
+  position:absolute; 
+  top: 0; left: 0;
+  text-align: center;
+  line-height: 592px;
+  font-size: 2rem;
+  font-weight: 700;
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+.container-wrap a:hover .franc_logo, .container-wrap a:focus .franc_logo {
+  opacity: 1;
+}
+@media screen and (max-width: 1465px) {
+  .container-wrap .cont img .last {
+    display: none;
+  }
+}

@@ -1,0 +1,264 @@
+body {
+  color: #fff;
+}
+.mainvisual {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.btn-wrap {
+  display: flex;
+  /* width: 100%; */
+  background: #162345;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 18px;
+  padding: 30px;
+}
+
+.btn-wrap .price p {
+  font-size: 1.65rem;
+}
+
+.btn-wrap .btn {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button.buy {
+  width: 280px;
+  height: 75px;
+  padding: 14px 60px;
+  background: #66C0F4;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.65rem;
+  border: none;
+}
+button.buy:hover {
+  background: #2690ce;
+}
+button.wish {
+  /* height: 75px; */
+  font-size: 1.65rem;
+  padding: 20px 25px;
+  border: none;
+  background: #fff;
+  color: #66C0F4;
+}
+button.wish:hover {
+  color: #fff;
+  background: #66C0F4;
+}
+button.heart {
+  font-size: 1.65rem;
+  padding: 20px 25px;
+  border: none;
+  background: #fff;
+  color: #FF8282;
+}
+button.heart:hover {
+  color: #fff;
+  background: #FF8282;
+}
+
+@media screen and (max-width: 650px) {
+  .btn-wrap .btn {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.container {
+  display: flex;
+  max-width: 1440px;
+}
+
+.game_ex_wrap {
+  max-width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 73px;
+}
+.game_ex_wrap h2 {
+  margin: 77px 0 22px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.game_ex {
+  display: flex;
+}
+.game_info_img img {
+  margin-right: 24px;
+}
+.game_info_wrap {
+  display: flex;
+  flex-direction: column;
+
+}
+.game_tit {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.game-detail {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  /* white-space: nowrap; */
+  text-overflow: ellipsis;
+  margin-bottom: 42px;
+  flex-direction: column;
+  max-width: 467px;
+}
+.grade {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.grade img {
+  border-radius: 5px;
+}
+@media screen and ( max-width: 980px) {
+  .game_ex {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .game_info_img img {
+    width: 100%;
+  }
+}
+@media screen and ( max-width: 650px) {
+  .btn-wrap {
+    flex-direction: column;
+  }
+}
+@media screen and ( max-width: 400px) {
+  .game_tit {
+    font-size: 1.25rem;
+  }
+}
+
+.game-img {
+
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  gap: 20px;
+
+}
+.game-img img {
+  width: 100%;
+}
+@media screen and (max-width:960px) {
+  .game-img {
+    flex-wrap: wrap;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+/* 표 */
+
+.set-tit {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 133px 0 60px;
+}
+.set-tit h4 {
+  padding: 10px;
+  font-size: 1.875rem;
+  border-bottom: 1px solid #fff;
+}
+.set-tit h5 {
+  padding: 10px;
+  font-size: 1.875rem;
+  color: #c2c2c2;
+}
+.setting-wrap p {
+  font-size: 1.563rem;
+  text-align: center;
+  margin-bottom: 48px;
+  padding: 10px;
+}
+
+.table {
+  table-layout:fixed;
+  width:75%;
+  /* text-align:center; */
+  margin: 0 auto 80px;
+}
+.table th { 
+  color: #cecece;
+  font-weight: 700;
+}
+.table td, .table th {
+  padding:15px 20px;
+  /* border-top:1px solid #ccc; */
+  word-break:break-all
+}
+@media screen and (max-width:768px) {
+  .setting-wrap .set-tit h4 {
+    font-size: 1.25rem;
+    padding: 5px;
+  }
+  .setting-wrap .set-tit h5 {
+    font-size: 1.25rem;
+    padding: 5px;
+  }
+  .setting-wrap p {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  /*block*/
+  tbody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .table {
+    text-align: center;
+  }
+  .table--block thead {
+    display:none;
+  }
+  .table--block tr {
+    display:block;
+    margin-bottom:10px;
+    border-top:none;
+  }
+  .table--block th, .table--block td {
+    display:block;
+    position:relative;
+    padding:10px 0;
+    /* padding-left:50%; */
+    border-width:0 0 1px 0;
+  }
+
+  .table--block td:before {
+    display:none;
+    position:absolute;
+    left:0;
+    top:0;
+    width:50%;
+    padding:10px 0;
+    background:#ccc;
+  }
+}
