@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steam 상점</title>
+  <link rel="icon" href="./img/favicon.ico">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/store.css">
+  <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <script src="https://kit.fontawesome.com/74b3b98be5.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="gnb-wrap">
+      <h1 class="logo">
+        <a href="index.html"><img src="./img/mainlogo_l.svg" alt="steam logo"></a>
+      </h1>
+
+      <a href="#" class="menu_btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </a>
+
+
+      <nav class="gnb">
+        <ul>
+          <li class="depth1"><a href="store.html">상점</a>
+            <div class="depth2">
+              <ul>
+                <li><a href="#">탐색 대기열</a></li>
+                <li><a href="#">신규 및 특집</a></li>
+                <li><a href="#">찜 목록</a></li>
+                <li><a href="#">포인트 상점</a></li>
+                <li><a href="#">카테고리</a></li>
+                <li><a href="#">뉴스</a></li>
+                <li><a href="#">실험실</a></li>
+                <li><a href="#">통계</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="depth1"><a href="community.html">커뮤니티</a>
+            <div class="depth2">
+              <ul>
+                <li><a href="#">스크린샷</a></li>
+                <li><a href="#">아트워크</a></li>
+                <li><a href="#">방송</a></li>
+                <li><a href="#">동영상</a></li>
+                <li><a href="#">창작마당</a></li>
+                <li><a href="#">뉴스</a></li>
+                <li><a href="#">가이드</a></li>
+                <li><a href="#">평가</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="depth1"><a href="mypage.html">마이페이지</a>
+            <div class="depth2">
+              <ul>
+                <li><a href="#">활동</a></li>
+                <li><a href="#">프로필</a></li>
+                <li><a href="#">친구</a></li>
+                <li><a href="#">게임</a></li>
+                <li><a href="#">그룹</a></li>
+                <li><a href="#">콘텐츠</a></li>
+                <li><a href="#">보관함</a></li>
+              </ul>
+            </div>  
+          </li>
+
+          <li class="depth1"><a href="support.html">지원</a></li>
+        </ul>
+        <div class="hammenu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <form class="searchbar">
+        <fieldset>
+          <legend>검색</legend>
+            <div class="search">
+              <input type="text" id="search" placeholder="찾으시는 게임이 있나요?">
+              <div type="submit" class="bt-search"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+        </fieldset>
+      </form>
+      <div class="mypage">
+        <a href="mypage.html"><span>보노보노</span></a>
+        <a href="mypage.html"><img src="./img/profile5.jpg" alt="profile photo"></a>      </div>
+    </div>
+  </header>
+  <!-- //header -->
+
+
+  <!-- main -->
+  <main>
+    <section class="mainvisual">
+      <!-- Swiper -->
+      <div class="swiper mySwiper swiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="game_detail.html"><img src="./img/popgame1.jpg" alt="Horizon Zero Dawn" class="slideimg"></a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/popgame2.png" alt="dave the diver" class="slideimg">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/popgame3.jpg" alt="Hogwart Legacy" class="slideimg">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/popgame4.jpg" alt="assassin's creed valhalla" class="slideimg">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/popgame5.jpg" alt="battlegrounds" class="slideimg">
+          </div>
+        </div>
+        <!-- <div class="swiper-button-next"></div> -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper swiper1", {
+    spaceBetween: 30,
+    effect: "fade",
+    loop: true,
+    loopAdditionalSlides: 1,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      },
+    });
+</script>
+    </section>
+
+
+    <section class="want_game">
+      <div class="want_tit">
+        <h2>내가 찜한 목록</h2>
+      </div>
+      <div class="want_list">
+        <a href="#">
+          <div class="gamelist">
+            <div class="gameimg"><img src="./img/want-1.png" alt="marvel's spiderman">
+            <div class="tit"><p>Marvels Spider-Man Remaster</p><p>62,800&#8361;</p></div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="gamelist">
+            <div class="gameimg"><img src="./img/hades2.jpg" alt="hades2">
+              <div class="tit"><p>HADES 2</p><p>8월 출시예정</p></div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="gamelist">
+            <div class="gameimg"><img src="./img/want-3.png" alt="assassin's creed valhalla">
+            <div class="tit"><p>Assassin's creed Valhalla</p><p>65,000&#8361;</p></div>
+          </div>
+        </a>
+      </div>
+      
+
+
+    </section>
+    <div class="more">
+      <button class="more_btn">게임 더 보기</button>
+    </div>
+    <section class="nowsale">
+      <div class="sale_tit">
+        <h3>세일중인 게임</h3>
+      </div>
+      <!-- Swiper -->
+    <div class="swier2">
+      <div class="swiper-wrapper slide2">
+
+        <div class="sale-wrap">
+          <div class="slide-img">
+            <img src="img/sale-1.jpg" alt="dead by daylight">
+          </div>
+          <div class="tit">
+            <p>DEAD BY DAYLIGHT</p>
+            <span style="text-decoration: line-through; color: #aaa">21, 000</span><i class="fa-solid fa-arrow-right"></i><span>8,400</span>
+          </div>
+        </div>
+
+        <div class="sale-wrap">
+          <div class="slide-img">
+            <img src="img/sale-2.jpg" alt="red dead redemption2">
+          </div>
+          <div class="tit">
+            <p>RED DEAD REDEMPTION 2</p>
+            <span style="text-decoration: line-through; color: #aaa">66, 000</span><i class="fa-solid fa-arrow-right"></i><span>21,780</span>
+          </div>
+        </div>
+
+
+        <div class="sale-wrap">
+          <div class="slide-img">
+            <img src="img/sale-3.jpg" alt="human fall flat">
+          </div>
+          <div class="tit">
+            <p>HUMAN: FALL FLAT</p>
+            <span style="text-decoration: line-through; color: #aaa">20, 500</span><i class="fa-solid fa-arrow-right"></i><span>6, 150</span>
+          </div>
+        </div>
+
+        <div class="sale-wrap">
+          <div class="slide-img">
+            <img src="img/sale-4.jpg" alt="F1 23">
+          </div>
+          <div class="tit">
+            <p>F1 23</p>
+            <span style="text-decoration: line-through; color: #aaa">99, 000</span><i class="fa-solid fa-arrow-right"></i><span>59, 400</span>
+          </div>
+        </div>
+
+        </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+  
+ 
+    <!-- Swiper JS -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+<!-- <script>
+  var swiper = new Swiper(".mySwiper .swiper1", {
+    spaceBetween: 30,
+    effect: "fade",
+    loop: true,
+    loopAdditionalSlides: 1,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      },
+    });
+</script> -->
+
+    </section>
+
+    <div class="banner">
+      <img src="./img/banner.jpg" alt="세일 안내 배너">
+    </div>
+
+    <section class="franchise">
+      <div class="franc_tit">
+        <h4>프랜차이즈 게임</h4>
+      </div>
+      <div class="container-wrap">
+        <a href="#" class="cont">
+          <img src="./img/franc-1.jpg" alt="fifa" class="slider-img">
+          <img src="img/Easports_fifa_logo.png" alt="" class="franc_logo">
+        </a>
+        <a href="#" class="cont">
+          <img src="./img/franc-2.jpg" alt="assassin's creed" class="slider-img">
+          <img src="img/assassins-creed-logo-black-and-white.png" alt="" class="franc_logo">
+        </a>
+        <a href="#" class="cont">
+          <img src="./img/franc-3.png" alt="call of duty" class="slider-img last">
+          <img src="img/Call-of-Duty-logo.png" alt="" class="franc_logo">
+        </a>
+      </div>
+    </section>
+    
+
+  </main>
+  <!-- //main -->
+
+
+
+
+  <!-- footer -->
+<footer>
+  <div class="footer-wrap">
+    <div class="steam-logo">
+      <a><img src="./img/mainlogo_l.svg" alt="steam logo" class="steam"></a>
+    </div>
+    <ul class="footer">
+      <li><a href="#_none">Vlave 정보</a></li>
+      <li><a href="#_none" class="link_partner">채용 정보</a></li>
+      <li><a href="#_none" class="link_partner">Steamworks</a></li>
+      <li><a href="#_none" class="link_partner">Steam 배포</a></li>
+      <li><a href="#_none" class="link_partner">지원</a></li>
+      <li><a href="#_none" class="link_partner">기프트카드</a></li>
+      <li><a href="#_none" class="link_partner"><img src="./img/facebook.svg" alt="facebook" class="sns">Steam</a></li>
+      <li><a href="#_none" class="link_partner"><img src="./img/twitter.svg" alt="twitter" class="sns">@Steam</a></li>
+    </ul>
+    <div class="copy">©2023 Valve Coporation. All rights reserved.<br>
+      모든 상표는 미국 및 기타 국가에서 해당하는 소유자의 재산입니다.<br>
+      부가가치세 포함
+    </div>
+    <ul class="footer last">
+      <li><a href="#_none">개인정보 보호정책</a></li>
+      <li><a href="#_none" class="link_partner">사용권</a></li>
+      <li><a href="#_none" class="link_partner">Steam 이용약관</a></li>
+      <li><a href="#_none" class="link_partner">환불</a></li>
+      <li><a href="#_none" class="link_partner">쿠키</a></li>
+    </ul>
+  </div>
+</footer>
+<!-- //footer -->
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="./js/common.js"></script>
+
+</body>
+</html>
