@@ -1,0 +1,228 @@
+@import url('https://webfontworld.github.io/sunn/SUIT.css');
+body{ 
+  font-family: 'SUIT';
+  color: #fff;
+}
+
+.header {
+  background: #1B2838;
+  width: 100%;
+  height: 120px;
+  display: flex;
+}
+.header .gnb-wrap {
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.header .gnb-wrap .logo img {
+  width: 150px;
+  height: 45px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .menu_btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: none;
+}
+.header .menu_btn div {
+  width: 7px;
+  height: 7px;
+  border-radius: 20px;
+  background: #66C0F4;
+  margin: 6px 0px;
+  position: relative;
+}
+
+
+.gnb > ul {
+  display: flex;
+}
+.gnb ul > .depth1 {
+  text-align: center;
+  padding: 0 20px;
+  position: relative;
+}
+.gnb > ul .depth1 > a {
+  display: block;
+  transition: 0.3s ease;
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 20px 20px;
+}
+
+
+.gnb ul > .depth1 > .depth2 li{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.gnb > ul > .depth1:hover > a { color: #66C0F4;}
+
+/* 서브메뉴 */
+.gnb ul .depth1 > .depth2 {
+  position: absolute;
+  width: 100%;
+  top: 90px;
+  left: 0;
+  padding: 20px 0px;
+  z-index: 99;
+  text-align: left;
+  background: #1B2838;
+  display: none;
+  border-radius: 0 0 10px 10px;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+}
+.depth2 ul > li {
+  margin: 12px 0;
+  font-size: 0.938rem;
+  font-weight: 400;
+}
+.depth2 li:hover {
+  text-decoration: underline;
+  color: #66c0f4;
+}
+.depth2 li.on {
+  text-decoration: underline;
+  color: #66c0f4;
+}
+
+/* 검색바 */
+
+.search {
+  /* width: 400px; */
+  height: 45px;
+  background: #2f4158;
+  border-radius: 30px;
+  border: #2f4158;
+  display: flex;
+  position: relative;
+}
+.search input[type="text"] {
+  max-width: 431px;
+  height: 100%;
+  background: transparent;
+  border: 0;
+  padding-left: 20px;
+  font-size: 0.938rem;
+  color: #fff;
+  outline: 0;
+}
+.search .bt-search {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+}
+legend {
+  display: none;
+}
+.mypage {
+  display: inline-flex;
+  align-items: center;
+}
+.mypage a {
+  color: #fff;
+  padding: 0 10px;
+}
+.header .gnb-wrap .mypage img {
+  width: 50px; height: 50px;
+  border-radius: 50px;
+}
+.gnb .hammenu {
+  display: none;
+}
+
+
+
+
+
+
+/* footer */
+footer {
+  background: #1e1e1e;
+  width: 100%;
+  height: 487px;
+}
+footer .footer-wrap {
+  text-align: center;
+  margin: 0 auto;
+}
+footer .steam-logo {
+  padding-top: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .steam {
+  width: 150px;
+  height: 45px;
+}
+footer .footer {
+  display: flex;
+  color: #758796;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer .link_partner::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: #40505e;
+  margin: 0 16px;
+}
+
+footer .footer {
+  padding: 30px 0 55px 0;
+  align-items: center;
+  display: inline-flex;
+
+}
+footer .footer li {
+  padding: 5px 6px;
+  text-align: center;
+}
+.footer li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .sns {
+  padding: 0 5px;
+}
+footer .copy{
+  color: #758796;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: normal;
+}
+.footer-wrap .last {
+  padding: 25px 0 85px 0;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1460px) {
+  .header {
+    height: 90px;
+  }
+
+  .searchbar,
+  .mypage,
+  .depth1 {
+    display: none;
+  }
+  .gnb .hammenu {
+    display: block;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+}
